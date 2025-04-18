@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.1 on win32)" generated="2025-04-19T00:57:46.049916" rpa="false" schemaversion="5">
+<suite id="s1" name="TC Health" source="d:\Robot frame_work for jio\test_casesJIo\TC_Health.robot">
+<test id="s1-t1" name="HealthpreQuote" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-19T00:57:46.330917" level="INFO">Opening browser 'chrome' to base url 'https://devev.jioinsure.in/'.</msg>
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-19T00:57:46.330917" elapsed="26.346521"/>
+</kw>
+<kw name="prequotePage helath">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.modal-scrollable .MuiPaper-root .modal-content .closePopup</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-19T00:58:12.680439" elapsed="0.030995"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-19T00:58:12.712439" level="INFO">Clicking element 'css:.modal-scrollable .MuiPaper-root .modal-content .closePopup'.</msg>
+<arg>css:.modal-scrollable .MuiPaper-root .modal-content .closePopup</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-19T00:58:12.712439" elapsed="0.079995"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-19T00:58:13.794017" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-19T00:58:12.793435" elapsed="1.000582"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-19T00:58:13.794017" level="INFO">Clicking button 'css:.css-t1oczc'.</msg>
+<arg>css:.css-t1oczc</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-19T00:58:13.794017" elapsed="0.073003"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-19T00:58:13.868020" level="INFO">Clicking element 'xpath://div[@class="MuiBox-root css-12hd50"]/p[contains(text(),"Health")]'.</msg>
+<arg>xpath://div[@class="MuiBox-root css-12hd50"]/p[contains(text(),"Health")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-19T00:58:13.867020" elapsed="0.089998"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-19T00:58:14.958294" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-19T00:58:13.957018" elapsed="1.001276"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-19T00:58:14.959094" level="INFO">Typing text 'random.Choice[7894555599,7894561235,7859641236,7539514862]' into text field 'id:Enter mobile number'.</msg>
+<arg>id:Enter mobile number</arg>
+<arg>${random}${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-19T00:58:14.958294" elapsed="0.209608"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-19T00:58:16.168114" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-19T00:58:15.167902" elapsed="1.000212"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-19T00:58:16.169116" level="INFO">Typing text 'random.Choice[176056,176063,147654,156054,154676]' into text field 'id:Enter your pincode'.</msg>
+<arg>id:Enter your pincode</arg>
+<arg>${random}${pincode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-19T00:58:16.168114" elapsed="0.179000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-19T00:58:16.347114" level="INFO">Clicking element 'xpath://div[contains(text(),"Get free quotes")]'.</msg>
+<arg>xpath://div[contains(text(),"Get free quotes")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-19T00:58:16.347114" elapsed="0.056001"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-19T00:58:19.404607" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-19T00:58:16.404119" elapsed="3.000488"/>
+</kw>
+<status status="PASS" start="2025-04-19T00:58:12.679454" elapsed="6.725153"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-19T00:58:19.405635" elapsed="2.307217"/>
+</kw>
+<status status="PASS" start="2025-04-19T00:57:46.328952" elapsed="35.383900"/>
+</test>
+<status status="PASS" start="2025-04-19T00:57:46.055916" elapsed="35.658937"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TC Health" id="s1" pass="1" fail="0" skip="0">TC Health</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
