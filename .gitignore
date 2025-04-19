@@ -1,0 +1,9 @@
+*.log
+__pycache__
+.vscode
+*.exe
+*.venv
+*.png
+log.html
+output.xml
+report.html
